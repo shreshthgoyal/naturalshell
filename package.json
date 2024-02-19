@@ -22,5 +22,12 @@
     "inquirer": "^9.2.14",
     "ora": "^8.0.1",
     "shelljs": "^0.8.5"
-  }
+  },
+  "keywords": [
+    "gemini",
+    "cli",
+    "shell",
+    "ai",
+    "terminal"
+  ]
 }
