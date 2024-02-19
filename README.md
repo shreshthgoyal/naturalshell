@@ -29,7 +29,7 @@ Ensure you have Node.js (version 14 or later) installed. Then, install NaturalSh
 npm install -g naturalshell
 ```
 
-Retrieve your API key from [Google](https://aistudio.google.com/app/apikey).
+Retrieve your API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
 
 >Note: If you haven't already, you'll have to create an account and set up a project to get your API key. (It's free of cost!)
 
@@ -38,7 +38,7 @@ Retrieve your API key from [Google](https://aistudio.google.com/app/apikey).
 Simply run `nsh` or `naturalshell` followed by your query in natural language:
 
 ```sh
-naturalshell -m "find all txt files in the current directory"
+nsh -m "find all txt files in the current directory"
 ```
 
 NaturalShell will interpret your command and offer a shell command suggestion with its explaination, which you can:
