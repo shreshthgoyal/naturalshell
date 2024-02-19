@@ -108,7 +108,7 @@ async function main() {
 
 export function maskString(inputString, maskCharacter) {
   if (typeof inputString !== 'string') {
-    return "Input string must be at least 6 characters long";
+    return inputString
   }
 
   const startChars = inputString.substring(0, 2);
