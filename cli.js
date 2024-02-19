@@ -48,7 +48,10 @@ async function main() {
   
   if(options.ms){
 
-    const apiKey = readApiKey();
+    let apiKey = readApiKey();
+
+    apiKey = maskString(apiKey, '*');
+
     if (apiKey) {
       console.log('\n🔑 API key found:', apiKey + '\n');
       
@@ -100,6 +103,20 @@ async function main() {
     }
     }
   }
+}
+
+
+export function maskString(inputString, maskCharacter) {
+  if (typeof inputString !== 'string' || inputString.length < 6) {
+    return "Input string must be at least 6 characters long";
+  }
+
+  const startChars = inputString.substring(0, 2);
+  const endChars = inputString.substring(inputString.length - 4);
+
+  const middleMasked = maskCharacter.repeat(inputString.length - 6);
+
+  return startChars + middleMasked + endChars;
 }
 
 
