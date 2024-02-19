@@ -50,7 +50,7 @@ async function main() {
 
     const apiKey = readApiKey();
     if (apiKey) {
-      console.log('🔑 API key found:', apiKey + '\n');
+      console.log('\n🔑 API key found:', apiKey + '\n');
       
       const input = await inquirer.prompt({
         type: 'input',
@@ -79,7 +79,7 @@ async function main() {
           }
         });
         saveApiKey(newApiKey);
-        console.log('🎉 API key updated in your system. \n');
+        console.log('\n🎉 API key updated in your system. \n');
       await exec();
        }
     }} else {
@@ -95,7 +95,7 @@ async function main() {
       if(newApiKey)
      {
       saveApiKey(newApiKey);
-      console.log('🎉 API key saved to your system. \n');
+      console.log('\n🎉 API key saved to your system. \n');
       await exec();
     }
     }
