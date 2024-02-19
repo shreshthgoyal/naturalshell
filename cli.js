@@ -107,7 +107,7 @@ async function main() {
 
 
 export function maskString(inputString, maskCharacter) {
-  if (typeof inputString !== 'string' || inputString.length < 6) {
+  if (typeof inputString !== 'string') {
     return "Input string must be at least 6 characters long";
   }
 
