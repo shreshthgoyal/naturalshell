@@ -5,7 +5,7 @@ AI-powered bridge from natural language to shell commands in CLI.
 ![npm version](https://img.shields.io/npm/v/naturalshell) 
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-![Gif Demo](DEMO_GIF_URL)
+![Gif Demo](https://i.ibb.co/CzdQkSH/Screencast-from-20-02-24-12-46-21-AM-IST.gif)
 
 NaturalShell is a Node.js package that simplifies the command line, allowing you to use natural language to generate and understand shell commands.
 
