@@ -1,6 +1,7 @@
 import inquirer from "inquirer";
 import { readApiKey, saveApiKey } from "../lib/key.js";
 import chalk from "chalk";
+import { exec } from "../cli.js";
 export function maskString(inputString, maskCharacter) {
   if (typeof inputString !== "string") {
     return inputString;

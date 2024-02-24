@@ -42,7 +42,7 @@ async function main() {
   await handleApiKey(options);
 }
 
-async function exec() {
+export async function exec() {
   const task = options.ms;
   const command = await oraPromise(generateCommand(task), {
     successText: chalk.bold.greenBright("🍜 Bon appétit!"),
