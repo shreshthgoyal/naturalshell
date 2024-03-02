@@ -14,7 +14,7 @@ const program = new Command();
 const log = console.log;
 
 program
-  .version("1.0.1")
+  .version("1.1.0")
   .description("Natural Language in your Shell")
   .option("-m, --ms  <value>", "task message that you wont to perform")
   .parse(process.argv);
